@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.aws/
+**/.aws/
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+.DS_Store
+Thumbs.db
+/PRECIOS-PARA-TECNICOS-22.06.2026.docx
+/contexto-empresa.md

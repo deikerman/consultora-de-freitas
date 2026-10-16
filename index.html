@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#020617">
+    <meta name="description" content="Soporte técnico, redes MikroTik, ciberseguridad y auditorías web en Ocumare del Tuy y Miranda. Desarrollo web y reparación de PCs y celulares para empresas.">
+    <title>Soporte técnico y redes en Ocumare del Tuy | De Freitas</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+    <script src="https://unpkg.com/lucide@0.468.0" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu" crossorigin="anonymous"></script>
+    <style>
+        :root { --ink: #e2e8f0; --muted: #94a3b8; --green: #10b981; --line: #1e293b; --paper: #020617; }
+        html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+        body { font-family: 'Inter', sans-serif; color: var(--ink); background: var(--paper); }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-grid { background-image: radial-gradient(rgba(16,185,129,.18) 0.8px, transparent 0.8px); background-size: 18px 18px; }
+        @media (min-width: 1024px) {
+            .hero-grid {
+            background-image: radial-gradient(rgba(16,185,129,.18) 0.8px, transparent 0.8px), linear-gradient(100deg, rgba(2,6,23,.98) 0%, rgba(2,6,23,.88) 52%, rgba(2,6,23,.58) 100%), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=70');
+                background-size: 18px 18px, cover, cover;
+                background-position: left top, center, center;
+            }
+        }
+        .hero-copy { animation: enter 650ms ease-out both; }
+        @keyframes enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+        .faq-answer { max-width: 62ch; }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    </style>
+</head>
+<body class="selection:bg-emerald-200 selection:text-emerald-950">
+    <nav class="fixed inset-x-0 top-0 z-50 border-b border-[#e4eae5] bg-[#f7f9f6]/95 backdrop-blur-md" aria-label="Navegación principal">
+        <div class="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 sm:px-8">
+            <a href="#inicio" class="brand flex items-center gap-2.5 text-[17px] font-extrabold tracking-tight" aria-label="Freitas, ir al inicio">
+                <span class="grid h-9 w-9 place-items-center rounded-lg bg-[#176b4b] text-white"><i data-lucide="workflow" class="h-5 w-5"></i></span>
+                <span class="whitespace-nowrap">De Freitas<span class="text-[#176b4b]">.</span></span>
+            </a>
+            <div class="flex items-center gap-4 text-sm font-semibold sm:gap-8">
+                <a href="#servicios" class="hidden text-[#53615a] transition hover:text-[#176b4b] sm:inline">Servicios</a>
+                <a href="#ciberseguridad" class="hidden text-[#53615a] transition hover:text-[#176b4b] lg:inline">Ciberseguridad</a>
+                <a href="#beneficios" class="hidden text-[#53615a] transition hover:text-[#176b4b] sm:inline">Beneficios</a>
+                <a href="#faq" class="hidden text-[#53615a] transition hover:text-[#176b4b] sm:inline">FAQ</a>
+                <a href="https://wa.me/584242220327?text=Hola,%20vi%20su%20página%20web%20y%20estoy%20interesado%20en%20sus%20servicios%20tecnológicos%20para%20empresas." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-10 items-center gap-2 rounded-md bg-[#176b4b] px-4 text-white transition hover:bg-[#10563b]">
+                    <i data-lucide="message-circle" class="h-4 w-4"></i><span>Hablemos</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="inicio" class="pt-[72px]">
+        <section class="relative overflow-hidden border-b border-[#e4eae5]">
+            <div class="hero-grid absolute inset-0 opacity-40" aria-hidden="true"></div>
+            <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[1.04fr_.96fr] lg:gap-16 lg:py-28">
+                <div class="hero-copy">
+                    <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d6e3d8] bg-white/80 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-[#176b4b]">
+                        <span class="h-1.5 w-1.5 rounded-full bg-[#3d9a6f]"></span> Consultora De Freitas · Tuy y Caracas
+                    </div>
+                    <h1 class="max-w-2xl text-[2.65rem] font-extrabold leading-[1.08] tracking-[-0.035em] sm:text-6xl">Soluciones tecnológicas, redes y ciberseguridad <span class="text-[#176b4b]">para empresas.</span></h1>
+                    <p class="mt-6 max-w-xl text-base leading-7 text-[#66736d] sm:text-lg sm:leading-8">Soporte técnico empresarial directo en Ocumare del Tuy, los Valles del Tuy y Miranda. Habla con el experto para resolver necesidades de redes, seguridad y operación tecnológica, sin intermediarios.</p>
+                    <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+                        <a href="https://wa.me/584242220327?text=Hola,%20soy%20dueño%20de%20una%20empresa%20y%20necesito%20asesoría%20tecnológica." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center justify-center gap-2.5 rounded-md bg-[#176b4b] px-6 font-bold text-white shadow-[0_8px_20px_rgba(23,107,75,.16)] transition hover:-translate-y-0.5 hover:bg-[#10563b]">
+                            <i data-lucide="message-circle" class="h-[18px] w-[18px]"></i> Contactar por WhatsApp
+                        </a>
+                        <a href="#servicios" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-5 font-semibold text-[#34433b] transition hover:bg-white/70">Explorar servicios <i data-lucide="arrow-down-right" class="h-4 w-4"></i></a>
+                    </div>
+                    <div class="mt-10 flex items-center gap-3 text-sm text-[#66736d]"><i data-lucide="shield-check" class="h-[18px] w-[18px] text-[#176b4b]"></i> Trato humano y asesoría técnica sin intermediarios.</div>
+                </div>
+                <div class="relative mx-auto w-full max-w-[590px] lg:ml-auto">
+                    <div class="absolute -inset-3 -rotate-2 rounded-xl border border-[#cbd9ce]" aria-hidden="true"></div>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" srcset="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=480&amp;q=70 480w, https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=800&amp;q=70 800w, https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w" sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 64px), 590px" alt="Infraestructura de servidores para una red empresarial segura" class="relative aspect-[1.22/1] w-full rounded-lg object-cover shadow-[0_24px_70px_rgba(23,37,31,.18)]" fetchpriority="high">
+                    <div class="absolute -bottom-5 left-4 flex items-center gap-3 rounded-md border border-[#e4eae5] bg-white px-4 py-3 shadow-lg sm:left-7 sm:px-5">
+                        <span class="grid h-10 w-10 place-items-center rounded-md bg-[#e7f2e9] text-[#176b4b]"><i data-lucide="activity" class="h-5 w-5"></i></span>
+                        <span><strong class="block text-sm font-bold">Todo conectado</strong><span class="mt-0.5 block text-xs text-[#66736d]">Redes listas para crecer</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-b border-[#e4eae5] bg-white py-16 sm:py-20">
+            <div class="mx-auto grid max-w-7xl gap-8 px-5 sm:px-8 md:grid-cols-[.8fr_1.2fr] md:items-center md:gap-16">
+                <div>
+                    <p class="mb-3 text-xs font-bold uppercase tracking-[0.15em] text-[#176b4b]">Un aliado técnico para tu operación</p>
+                    <h2 class="max-w-md text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Soporte técnico y soluciones informáticas para empresas de Miranda.</h2>
+                </div>
+                <div>
+                    <p class="text-base leading-7 text-[#53615a]">En Consultora De Freitas resolvemos problemas reales de infraestructura para pequeñas y medianas empresas, comercios y oficinas. Te atiende directamente un técnico especializado: sin pasar por intermediarios, con soluciones claras y enfocadas en que vuelvas a trabajar.</p>
+                    <p class="mt-4 text-base leading-7 text-[#53615a]">Desde redes seguras y mantenimiento de equipos hasta páginas web, cámaras de seguridad y automatización de tareas, reunimos el soporte que tu empresa necesita en un solo contacto. Atendemos en Ocumare del Tuy, los Valles del Tuy y Caracas, de forma presencial y remota según el servicio.</p>
+                    <a href="https://wa.me/584242220327?text=Hola,%20quiero%20contarles%20sobre%20una%20necesidad%20tecnológica%20de%20mi%20empresa." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex min-h-11 items-center gap-2 rounded-md bg-[#176b4b] px-5 font-bold text-white transition hover:bg-[#10563b]"><i data-lucide="message-circle" class="h-4 w-4"></i> Cuéntanos qué necesita tu empresa</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ciberseguridad" class="scroll-mt-20 border-b border-[#e4eae5] bg-[#17251f] py-20 text-white sm:py-24">
+            <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[.95fr_1.05fr] lg:items-center lg:gap-20">
+                <div>
+                    <p class="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-[#9bd4b0]"><i data-lucide="shield-check" class="h-4 w-4"></i> Ciberseguridad para empresas</p>
+                    <h2 class="max-w-xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Ciberseguridad y auditorías web para proteger los sistemas de tu empresa.</h2>
+                    <p class="mt-5 max-w-xl leading-7 text-[#c3d0c8]">Una web desactualizada, accesos mal configurados o equipos sin protección pueden abrir la puerta a robo de información, suplantación, interrupciones y pérdida de confianza. Revisar a tiempo ayuda a detectar riesgos y decidir qué corregir primero, antes de que se conviertan en un problema para tu operación.</p>
+                    <a href="https://wa.me/584242220327?text=Hola,%20quiero%20solicitar%20una%20revisión%20de%20ciberseguridad%20para%20mi%20empresa.%20El%20sitio%20web%20o%20sistema%20es%3A%20" target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex min-h-12 items-center justify-center gap-2.5 rounded-md bg-[#9bd4b0] px-5 font-bold text-[#17251f] transition hover:bg-white"><i data-lucide="scan-search" class="h-[18px] w-[18px]"></i> Solicitar una revisión inicial</a>
+                    <p class="mt-3 text-xs leading-5 text-[#aabbb0]">Alcance y autorización se acuerdan antes de cualquier evaluación. Sin pruebas sobre sistemas ajenos.</p>
+                </div>
+                <div class="border-t border-white/15 lg:border-l lg:border-t-0 lg:pl-10">
+                    <p class="mb-6 text-sm font-semibold text-[#dce8e0]">Una revisión puede ayudar a identificar:</p>
+                    <ul class="space-y-5">
+                        <li class="flex gap-3"><i data-lucide="globe-lock" class="mt-0.5 h-5 w-5 shrink-0 text-[#9bd4b0]"></i><span><strong class="font-bold">Debilidades en tu web</strong><span class="mt-1 block text-sm leading-6 text-[#b8c7bd]">Componentes sin actualizar, configuraciones riesgosas y puntos de exposición habituales.</span></span></li>
+                        <li class="flex gap-3"><i data-lucide="key-round" class="mt-0.5 h-5 w-5 shrink-0 text-[#9bd4b0]"></i><span><strong class="font-bold">Riesgos de acceso</strong><span class="mt-1 block text-sm leading-6 text-[#b8c7bd]">Cuentas, permisos y prácticas que podrían facilitar accesos no autorizados.</span></span></li>
+                        <li class="flex gap-3"><i data-lucide="server-crash" class="mt-0.5 h-5 w-5 shrink-0 text-[#9bd4b0]"></i><span><strong class="font-bold">Puntos débiles en tus sistemas</strong><span class="mt-1 block text-sm leading-6 text-[#b8c7bd]">Señales de exposición en equipos y red local que conviene priorizar.</span></span></li>
+                        <li class="flex gap-3"><i data-lucide="list-checks" class="mt-0.5 h-5 w-5 shrink-0 text-[#9bd4b0]"></i><span><strong class="font-bold">Próximos pasos claros</strong><span class="mt-1 block text-sm leading-6 text-[#b8c7bd]">Hallazgos explicados en lenguaje directo y recomendaciones ordenadas por prioridad.</span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="scroll-mt-20 border-b border-[#e4eae5] bg-white py-20 sm:py-24">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+                <div class="mb-10 flex flex-col justify-between gap-4 sm:mb-12 sm:flex-row sm:items-end">
+                    <div><p class="mb-3 text-xs font-bold uppercase tracking-[0.15em] text-[#176b4b]">Lo que hacemos</p><h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Redes, desarrollo web y soporte técnico empresarial</h2></div>
+                    <p class="max-w-md text-sm leading-6 text-[#66736d] sm:text-base">Soluciones prácticas y confiables para la operación diaria de tu empresa.</p>
+                </div>
+                <div class="grid gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <a href="ciberseguridad.html" class="group border-t-2 border-[#dce7de] p-6 transition hover:border-[#176b4b] sm:p-7"><span class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-[#eaf3eb] text-[#176b4b]"><i data-lucide="scan-search" class="h-5 w-5"></i></span><h3 class="text-lg font-bold">Ciberseguridad y auditorías web</h3><p class="mt-2 text-sm leading-6 text-[#66736d]">Revisión de riesgos en páginas, accesos y sistemas para saber qué conviene corregir.</p><span class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#176b4b]">Ver servicio <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span></a>
+                    <a href="reparacion-optimizacion.html" class="group border-t-2 border-[#dce7de] p-6 transition hover:border-[#176b4b] sm:p-7"><span class="mb-6 flex h-11 w-11 items-center justify-center gap-1 rounded-md bg-[#eaf3eb] text-[#176b4b]"><i data-lucide="laptop" class="h-5 w-5"></i><i data-lucide="smartphone" class="h-4 w-4"></i></span><h3 class="text-lg font-bold">Reparación de PCs y celulares</h3><p class="mt-2 text-sm leading-6 text-[#66736d]">Diagnóstico, reparación y optimización de hardware y software para computadoras y teléfonos.</p><span class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#176b4b]">Ver servicio <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span></a>
+                    <a href="desarrollo-web.html" class="group border-t-2 border-[#dce7de] p-6 transition hover:border-[#176b4b] sm:p-7"><span class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-[#eaf3eb] text-[#176b4b]"><i data-lucide="panels-top-left" class="h-5 w-5"></i></span><h3 class="text-lg font-bold">Desarrollo y auditorías web</h3><p class="mt-2 text-sm leading-6 text-[#66736d]">Diseño, desarrollo, mantenimiento y revisión de seguridad para páginas empresariales.</p><span class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#176b4b]">Ver servicio <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span></a>
+                    <a href="soporte-tecnico.html" class="group border-t-2 border-[#dce7de] p-6 transition hover:border-[#176b4b] sm:p-7"><span class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-[#eaf3eb] text-[#176b4b]"><i data-lucide="life-buoy" class="h-5 w-5"></i></span><h3 class="text-lg font-bold">Soporte técnico y seguridad</h3><p class="mt-2 text-sm leading-6 text-[#66736d]">Mantenimiento preventivo y correctivo de equipos, sistemas y cámaras.</p><span class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#176b4b]">Ver servicio <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span></a>
+                    <a href="redes-conectividad.html" class="group border-t-2 border-[#dce7de] p-6 transition hover:border-[#176b4b] sm:p-7"><span class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-[#eaf3eb] text-[#176b4b]"><i data-lucide="network" class="h-5 w-5"></i></span><h3 class="text-lg font-bold">Redes empresariales y MikroTik</h3><p class="mt-2 text-sm leading-6 text-[#66736d]">Configuración de MikroTik, OpenWRT y redes seguras con conectividad estable.</p><span class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#176b4b]">Ver servicio <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span></a>
+                    <a href="automatizacion.html" class="group border-t-2 border-[#dce7de] p-6 transition hover:border-[#176b4b] sm:p-7"><span class="mb-6 grid h-11 w-11 place-items-center rounded-md bg-[#eaf3eb] text-[#176b4b]"><i data-lucide="workflow" class="h-5 w-5"></i></span><h3 class="text-lg font-bold">Automatización y software de ventas</h3><p class="mt-2 text-sm leading-6 text-[#66736d]">Automatización y scripts a medida. Próximamente: software de ventas para comercios.</p><span class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#176b4b]">Ver servicio <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="scroll-mt-20 border-b border-[#e4eae5] py-20 sm:py-24">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+                <div class="max-w-2xl"><p class="mb-3 text-xs font-bold uppercase tracking-[0.15em] text-[#176b4b]">Beneficios clave</p><h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Soporte tecnológico local para que tu empresa siga avanzando</h2></div>
+                <div class="mt-10 grid gap-x-10 gap-y-9 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="flex gap-4"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-white text-[#176b4b] shadow-sm ring-1 ring-[#e4eae5]"><i data-lucide="zap" class="h-[18px] w-[18px]"></i></span><div><h3 class="font-bold">Respuesta ágil</h3><p class="mt-1.5 text-sm leading-6 text-[#66736d]">Contacto directo para avanzar sin vueltas cuando lo necesitas.</p></div></article>
+                    <article class="flex gap-4"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-white text-[#176b4b] shadow-sm ring-1 ring-[#e4eae5]"><i data-lucide="lock-keyhole" class="h-[18px] w-[18px]"></i></span><div><h3 class="font-bold">Seguridad mejorada</h3><p class="mt-1.5 text-sm leading-6 text-[#66736d]">Buenas prácticas y una infraestructura cuidada desde el inicio.</p></div></article>
+                    <article class="flex gap-4"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-white text-[#176b4b] shadow-sm ring-1 ring-[#e4eae5]"><i data-lucide="settings-2" class="h-[18px] w-[18px]"></i></span><div><h3 class="font-bold">Soluciones a medida</h3><p class="mt-1.5 text-sm leading-6 text-[#66736d]">Recomendaciones ajustadas a tus procesos, equipo y prioridades.</p></div></article>
+                    <article class="flex gap-4"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-white text-[#176b4b] shadow-sm ring-1 ring-[#e4eae5]"><i data-lucide="trending-up" class="h-[18px] w-[18px]"></i></span><div><h3 class="font-bold">Preparado para crecer</h3><p class="mt-1.5 text-sm leading-6 text-[#66736d]">Sistemas más ordenados que pueden acompañar la evolución del negocio.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="scroll-mt-20 border-b border-[#e4eae5] bg-white py-20 sm:py-24">
+            <div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
+                <div><p class="mb-3 text-xs font-bold uppercase tracking-[0.15em] text-[#176b4b]">Preguntas frecuentes</p><h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Resolvamos tus dudas.</h2><p class="mt-4 max-w-sm leading-7 text-[#66736d]">¿Tienes una consulta específica? Escríbenos y conversemos sobre lo que tu empresa necesita.</p><a href="https://wa.me/584242220327?text=Hola,%20tengo%20una%20consulta%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center gap-2 font-bold text-[#176b4b] hover:text-[#10563b]">Pregúntanos por WhatsApp <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a></div>
+                <div class="divide-y divide-[#e4eae5] border-y border-[#e4eae5]">
+                    <details class="group py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold marker:content-none">¿Qué tipo de empresas pueden contratar sus servicios?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-[#176b4b] transition-transform group-open:rotate-45"></i></summary><p class="faq-answer mt-3 text-sm leading-6 text-[#66736d]">Trabajamos con empresas y negocios que necesitan soporte tecnológico, redes confiables o automatizar tareas. El alcance se adapta al tamaño y las necesidades de cada equipo.</p></details>
+                    <details class="group py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold marker:content-none">¿Pueden revisar mi infraestructura actual?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-[#176b4b] transition-transform group-open:rotate-45"></i></summary><p class="faq-answer mt-3 text-sm leading-6 text-[#66736d]">Sí. Podemos conversar sobre tu configuración actual, identificar prioridades y recomendar próximos pasos antes de definir cualquier trabajo.</p></details>
+                    <details class="group py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold marker:content-none">¿Ofrecen mantenimiento preventivo?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-[#176b4b] transition-transform group-open:rotate-45"></i></summary><p class="faq-answer mt-3 text-sm leading-6 text-[#66736d]">Sí. El soporte preventivo ayuda a revisar equipos y redes periódicamente para reducir riesgos de interrupciones y detectar problemas a tiempo.</p></details>
+                    <details class="group py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold marker:content-none">¿Cómo solicito una cotización?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-[#176b4b] transition-transform group-open:rotate-45"></i></summary><p class="faq-answer mt-3 text-sm leading-6 text-[#66736d]">Escríbenos por WhatsApp con una breve descripción de lo que necesitas. Te responderemos para entender el alcance y orientarte sobre los siguientes pasos.</p></details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8">
+        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 text-sm text-[#66736d] sm:flex-row sm:items-center sm:justify-between sm:px-8">
+            <a href="#inicio" class="brand w-fit font-extrabold text-[#17251f]">Consultora De Freitas<span class="text-[#176b4b]">.</span></a>
+            <p>&copy; 2026 Consultora De Freitas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/584242220327?text=Hola,%20vi%20su%20página%20web%20y%20estoy%20interesado%20en%20sus%20servicios%20tecnológicos%20para%20empresas." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" class="fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-[#176b4b] text-white shadow-lg transition hover:scale-105 hover:bg-[#10563b] sm:bottom-7 sm:right-7 sm:h-14 sm:w-14"><i data-lucide="message-circle" class="h-6 w-6"></i></a>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

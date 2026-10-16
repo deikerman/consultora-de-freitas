@@ -1,0 +1,110 @@
+:root {
+    color-scheme: dark;
+    --ink: #e2e8f0;
+    --muted: #94a3b8;
+    --green: #10b981;
+    --line: #1e293b;
+    --paper: #020617;
+}
+
+body {
+    color: var(--ink) !important;
+    background-color: var(--paper) !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+h1, h2 {
+    letter-spacing: 0 !important;
+}
+
+::selection {
+    color: #020617;
+    background: #10b981;
+}
+
+[class~="bg-[#f7f9f6]"] {
+    background-color: #020617 !important;
+}
+
+[class~="bg-[#f7f9f6]/95"],
+[class~="bg-white"] {
+    background-color: #0f172a !important;
+}
+
+[class~="bg-white/80"] {
+    background-color: rgba(15, 23, 42, .9) !important;
+}
+
+[class~="bg-white/70"] {
+    background-color: rgba(30, 41, 59, .8) !important;
+}
+
+[class~="bg-[#17251f]"] {
+    background-color: #020617 !important;
+}
+
+[class~="bg-[#176b4b]"],
+[class~="bg-[#9bd4b0]"] {
+    background-color: #10b981 !important;
+}
+
+[class~="bg-[#eaf3eb]"],
+[class~="bg-[#e7f2e9]"] {
+    background-color: rgba(16, 185, 129, .12) !important;
+}
+
+[class~="text-[#17251f]"],
+[class~="text-[#34433b]"],
+[class~="text-[#53615a]"],
+[class~="text-[#dce8e0]"] {
+    color: #e2e8f0 !important;
+}
+
+[class~="text-[#66736d]"],
+[class~="text-[#aabbb0]"],
+[class~="text-[#b8c7bd]"],
+[class~="text-[#c3d0c8]"] {
+    color: #94a3b8 !important;
+}
+
+[class~="text-[#176b4b]"],
+[class~="text-[#9bd4b0]"],
+[class~="text-[#3d9a6f]"] {
+    color: #10b981 !important;
+}
+
+[class~="text-[#10563b]"] {
+    color: #34d399 !important;
+}
+
+[class~="bg-[#176b4b]"][class~="text-white"],
+[class~="bg-[#176b4b]"] [class~="text-white"],
+[class~="bg-[#9bd4b0]"][class~="text-[#17251f]"] {
+    color: #020617 !important;
+}
+
+[class~="border-[#e4eae5]"],
+[class~="border-[#dce7de]"],
+[class~="border-[#d6e3d8]"],
+[class~="border-[#cbd9ce]"],
+[class~="ring-[#e4eae5]"] {
+    border-color: #1e293b !important;
+    --tw-ring-color: #1e293b !important;
+}
+
+[class~="hover:border-[#176b4b]"]:hover {
+    border-color: #10b981 !important;
+}
+
+[class~="hover:bg-[#10563b]"]:hover,
+[class~="hover:bg-white"]:hover {
+    background-color: #34d399 !important;
+}
+
+[class~="hover:text-[#10563b]"]:hover {
+    color: #34d399 !important;
+}
